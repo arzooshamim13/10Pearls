@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --white: white;
+  --green: rgb(183, 250, 0);
+}
+
+body {
+  font-family: "Acme", serif;
+}
+
+nav {
+  padding: 20px 10px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav img {
+  width: 15%;
+}
+
+nav a {
+  list-style-type: none;
+  display: inline;
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  transition-duration: 1s;
+  border-bottom: 4px solid rgb(0, 0, 0);
+
+}
+
+nav a:hover {
+  border-bottom: 4px solid var(--green);
+}
+
+nav button {
+  margin-left: 20px;
+  padding: 9px 15px;
+  background-color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Acme", serif;
+}
+
+nav nav i {
+  color: white;
+  font-size: 19px;
+  margin-left: 20px;
+}
+
+
+/* hero */
+.hero {
+  width: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.185)), url("./images/homepage-hero-1.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  padding-top: 10%;
+}
+
+.hero h3 {
+  color: white;
+  font-size: 22px;
+}
+
+.hero .h5 {
+  font-size: 22px;
+  color: var(--green);
+}
+
+.hero h1 {
+  color: white;
+  font-size: 45px;
+}
+
+.hero p{
+  width: 35%;
+  color: white;
+  margin-top: 20px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background: none;
+  border: 2px solid var(--green);
+  margin-top: 20px;
+  font-size: 17px;
+  color: var(--green);
+  font-family: "Acme", serif;
+}
+
+
+/* Expertise */
+.ourExpertise {
+  width: auto;
+  background-color: rgba(3, 2, 2, 0.932);
+}
+
+.ourExpertise h1 {
+  padding-left: 5%;
+  color: white;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.ourExpertise .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  
+}
+
+.ourExpertise .box .box1,
+.box2,
+.box3,
+.box4 {
+  font-size: 13px;
+  color: white;
+  margin-left: 30px;
+  }
+  .ourExpertise .box .box1 p,
+.ourExpertise .box2 p,
+.ourExpertise .box3 p,
+.ourExpertise .box4 p{
+ font-size:14px;
+ text-decoration: underline;
+ }
+
+ .ourExpertise .box .box1 img,
+ .ourExpertise .box2 img,
+ .ourExpertise .box3 img,
+ .ourExpertise .box4 img{
+  margin-bottom: 10px;
+  width: 40%;
+ }
+
+ /* small navigation */
+
+ .small{
+  background-color: var(--green);
+  padding: 10px 20px;
+}
+
+.small a{
+  color: black;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 20px;
+ }
+ .small i{
+  font-size: 15px;
+  margin-left: 10px;
+ }
+
+/* 3rd sec */
+
+.third{
+  margin-top: 7%;
+  padding-left: 5%;
+}
+.third h1{
+  display: inline;
+  border-bottom: 5px solid var(--green);
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.third .box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.third .box img{
+  width: 8%;
+  padding: 20px 30px;
+  /* margin-left: 5px; */
+}
+
+
+/* company name sec */
+
+.big{
+  border: 2px solid black;
+  margin-top: 5%;
+  padding: 20px 30px;
+  /* text-align: center; */
+  box-shadow: 0px 10px 60px 8px rgba(0, 128, 0, 0.288);
+}
+.big .main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  
+}
+.big .main .main1  p,
+.big .main .main2 p,
+.big .main .main3 p,
+.big .main .main4 p{
+ padding: 5px 10px;
+ 
+ }
+.big .main .main1  img,
+.big .main .main2 img,
+.big .main .main3 img,
+.big .main .main4 img{
+width : 70%;
+ 
+ }
+
+/* advantage */
+.advantage{
+  border: 2px solid black;
+  margin-top: 5%;
+  padding: 20px 30px;
+  background-color: rgba(3, 2, 2, 0.932);
+
+} 
+.advantage .main{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+    color: white;
+    padding: 2% 3%;
+  
+}
+.advantage .add{
+  color: white;
+     margin-bottom: 30px;
+ }
+
+ .advantage a{
+  color: var(--green);
+  
+ }
+ .advantage .main .main1  p,
+.advantage .main .main2 p,
+.advantage .main .main3 p,
+.advantage .main .main4 p{
+ padding: 5px 10px;
+ 
+ }
+ .advantage .main .main1  a,
+.advantage .main .main2 a,
+.advantage .main .main3 a,
+.advantage .main .main4 a{
+ padding: 5px 10px;
+ 
+ }
+
+ /* insight */
+ .insight{
+  margin-top: 5%;
+ }
+
+ .insight .box{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ }
+
+ .insight .box img{
+  width: 23%;
+  height: 60vh;
+  transition-duration: 0.6s;
+ }
+ .insight .box img:hover{
+  box-shadow: 0px 10px 60px 8px rgba(0, 128, 0, 0.288);
+  
+ }
+
+ /* Celerate */
+
+ .celerate{
+  padding: 20px 20px;
+  margin-top: 4%;
+  background-color: var(--green);
+  text-align: center;
+ }
+ .celerate h1{
+  font-size: 45px;
+  
+ }
+ .celerate h2{
+  font-size: 35px;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+
+
+ }
+ .celerate button{
+  margin-left: 20px;
+  padding: 9px 30px;
+  background-color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Acme", serif;
+  margin-top: 20px;
+ }
+
+ button:hover{
+  background-color: black;
+  color: green;
+ }
+
+ /* About */
+ .about{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 7%;
+ }
+ .about .image{
+  width: 50%;
+ }
+ .about .image img{
+  width: 90%;
+  margin-left: 20px;
+  border-radius: 20px;
+ }
+ .about .text{
+  width: 50%;
+  font-size: 18px;
+  margin-right: 20px;
+ }
+ .about .text h3{
+  font-size: 27px;
+  margin-bottom: 10px;
+ }
+
+
+ /* footer */
+
+ footer{
+  background-color: rgba(3, 2, 2, 0.932);
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding: 20px 30px;
+color: white;
+font-size: 17px;
+margin-top: 2%;
+ }
+ footer h3{
+  font-size: 30px;
+  color: var(--green);
+ }
+ footer i{
+  font-size: 25px;
+  color: white;
+ }
